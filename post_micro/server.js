@@ -1,5 +1,6 @@
 import express from "express";
 import cors from 'cors'
+import Routes from './routes/index.js'
 
 import "dotenv/config"
 
@@ -15,6 +16,7 @@ app.get('/', (req,res)=> {
 })
 
 //Routes
+app.use(Routes)
 
 
 
